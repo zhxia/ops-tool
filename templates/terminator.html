@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript">
+        let url = 'ws://localhost:8888/ws?id={{ id }}'
+    </script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/xterm.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/fullscreen.min.css') }}">
+</head>
+<body>
+<div id="terminal"></div>
+<script src="{{ url_for('static',filename='js/xterm.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/xterm-addon-fit.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/main.js',v=13) }}"></script>
+</body>
+</html>
